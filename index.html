@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="result hidden">
+        <div class="result_in_text">
+        </div>
+        <div class="result_in_json">
+        </div>
+    </div>
+    <div class="main">
+        <button class="beginButton">Начать</button>
+    </div>
+    <div class="container hidden">
+        <div class="modal">
+            <div class="header">
+                <p>Форма</p>
+                <img src="./close.svg" alt="close" class="close">
+            </div>
+            <div class="contnet">
+                <div class="field">
+                    <label for="fullname">Ф.И.О.</label>
+                    <input type="text" name="fullname">
+                </div>
+                
+                <div class="field">
+                    <label for="age">Возраст</label>
+                    <input type="number" name="age">
+                </div>
+                
+                <div class="field">
+                    <label for="experience">Опыт работы</label>
+                    <input type="text" name="experience">
+                </div>
+                
+                <div class="field">
+                    <label for="knowledge">Стек знаний</label>
+                    <input type="text" name="knowledge">
+                </div>
+                
+                <div class="field">
+                    <label for="salary">Зарплатные ожидания</label>
+                    <input type="text" name="salary">
+                </div>
+            </div>
+            <div class="submitButton">
+                <button>Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

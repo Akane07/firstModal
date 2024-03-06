@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+.beginButton {
+    width: 200px;
+    height: 48px;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    color: #FFFFFF;
+    background: #32BCA3;
+    cursor: pointer;
+}
+.beginButton:hover {
+    background: #26ac93; 
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    max-width: 500px;
+    min-width: 250px;
+    background: white;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contnet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.close {
+    cursor: pointer;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.field input {
+    border-radius: 5px;
+    border: 1px solid rgb(163, 159, 159);
+}
+.submitButton button {
+    padding: 10px 22px;
+    border: none;
+    font-size: 14px;
+    border-radius: 30px;
+    outline: none;
+    color: #FFFFFF;
+    background: rgba(54, 106, 243, 1);
+    cursor: pointer;
+}
+
+.submitButton button:hover {
+    background: rgb(37, 89, 221);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.result {
+    border: 2px solid black;
+    border-radius: 10px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: -10;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (width < 600px) {
+    .contnet {
+        flex-direction: column;
+    }
+    .field {
+        width: 100%;
+    }
+}
